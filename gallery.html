@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Portfolio - Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Photography Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/nature.jpg" alt="Photo 1" onclick="openLightbox('images/nature.jpg')">
+        </div>
+        <div class="image-item">
+          <img src="images/bird-peacock7073243_960_720.jpg" alt="Photo 2" onclick="openLightbox('images/bird-peacock7073243_960_720.jpg')">
+        </div>
+        <div class="image-item">
+          <img src="images/cosmos-flowers7709242_960_720.jpg" alt="Photo 3" onclick="openLightbox('images/cosmos-flowers7709242_960_720.jpg')">
+        </div>
+        <div class="image-item">
+          <img src="images/fantasy-butterflys2049567_960_720.jpg" alt="Photo 4" onclick="openLightbox('images/fantasy-butterflys2049567_960_720.jpg')">
+        </div>
+        <div class="image-item">
+          <img src="images/pexels-anna-louise-210491-1387577.jpg" alt="Photo 5" onclick="openLightbox('images/pexels-anna-louise-210491-1387577.jpg')">
+        </div>
+        <div class="image-item">
+          <img src="images/pexels-olenkabohovyk-3646165.jpg" alt="Photo 6" onclick="openLightbox('images/pexels-olenkabohovyk-3646165.jpg')">
+        </div>
+        <div class="image-item">
+          <img src="images/pexels-olenkabohovyk-3819969.jpg" alt="Photo 7" onclick="openLightbox('images/pexels-olenkabohovyk-3819969.jpg')">
+        </div>
+        <div class="image-item">
+          <img src="images/pexels-kowalievska-1170986.jpg" alt="Photo 8" onclick="openLightbox('images/pexels-kowalievska-1170986.jpg')">
+        </div>
+        <div class="image-item">
+          <img src="images/pexels-tkirkgoz-16468199.jpg" alt="Photo 9" onclick="openLightbox('images/pexels-tkirkgoz-16468199.jpg')">
+        </div>
+        <!-- Add more images here -->
+      </div>
+    </div>
+  </section>
+
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="" alt="Lightbox Image">
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Photography Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
